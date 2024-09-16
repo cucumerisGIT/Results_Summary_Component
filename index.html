@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta name="description" content="
+      View your test results summary with scores in Reaction, Memory, Verbal, and Visual categories. 
+      See how you rank compared to others and continue to the next challenge."
+    >
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="result-score">
+        <h1 class="result-score__title">Your Result</h1>
+        
+        <!-- Total Score -->
+        <div class="result-score__wrapper">
+          <p class="result-score__total">76</p>
+          <p class="result-score__max-score">of 100</p>
+        </div>
+
+        <p class="result-score__feedback">Great</p>
+        <p class="result-score__desc">You scored higher than 65% of the people who have taken these tests.</p>
+      </section>
+
+      <section class="result-summary">
+        <h2 class="result-summary__title">Summary</h2>
+
+        <!-- Reaction Score -->
+        <div class="result-summary__grid">
+          <div class="result-summary__item result-summary__item--red">
+            <span>
+              <img src="assets/images/icon-reaction.svg" alt="" role="presentation">
+              <p class="result-summary__item__title">Reaction</p>
+            </span>
+            <span>
+              <p class="result-summary__item__score">80</p>
+              <p class="result-summary__item__slash">/</p>
+              <p class="result-summary__item__max-score">100</p>
+            </span>
+          </div>
+
+          <!-- Memory Score -->
+          <div class="result-summary__item result-summary__item--yellow">
+            <span>
+              <img src="assets/images/icon-memory.svg" alt="" role="presentation">
+              <p class="result-summary__item__title">Memory</p>
+            </span>
+            <span>
+              <p class="result-summary__item__score">92</p>
+              <p class="result-summary__item__slash">/</p>
+              <p class="result-summary__item__max-score">100</p>
+            </span>
+          </div>
+
+          <!-- Verbal Score -->
+          <div class="result-summary__item result-summary__item--green">
+            <span>
+              <img src="assets/images/icon-verbal.svg" alt="" role="presentation">
+              <p class="result-summary__item__title">Verbal</p>
+            </span>
+            <span>
+              <p class="result-summary__item__score">61</p>
+              <p class="result-summary__item__slash">/</p>
+              <p class="result-summary__item__max-score">100</p>
+            </span>
+          </div>
+          
+          <!-- Visual Score -->
+          <div class="result-summary__item result-summary__item--blue">
+            <span>
+              <img src="assets/images/icon-visual.svg" alt="" role="presentation">
+              <p class="result-summary__item__title">Visual</p>
+            </span>
+            <span>
+              <p class="result-summary__item__score">72</p>
+              <p class="result-summary__item__slash">/</p>
+              <p class="result-summary__item__max-score">100</p>
+            </span>
+          </div>
+        </div>
+
+        <button role="button" class="continue-button">Continue</button>
+
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">cucumeris</a>.
+    </footer>
+  </body>
+</html>
